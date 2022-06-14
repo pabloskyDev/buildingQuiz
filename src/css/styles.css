@@ -96,7 +96,12 @@ h2 {
 h2 {
     border-bottom: 4px solid #dfdfe2;
     margin-top: 0px;
-    padding-top: 60px;
+    padding-top: 50px;
+}
+
+h2:hover {
+    color: #f1be32;
+    cursor: context-menu;
 }
 
 .info {
@@ -106,6 +111,13 @@ h2 {
 .formrow {
     margin-top: 30px;
 	padding: 0px 15px;
+}
+
+select, textarea {
+    width: 50%;
+    padding: 5px 2px;
+    font-size: 16px;
+    margin: 5px 0;
 }
 
 input {
@@ -120,6 +132,7 @@ input {
 .info input {
     width: 50%;
     text-align: left;
+    padding: 5px 2px;
 }
 
 .info label {
@@ -131,13 +144,13 @@ input {
     text-align: left;
 	display: block;
 	width: 100%;
-	margin-top: 20px;
+	margin-top: 5px;
 	padding-top: 5px;
 }
 
 p {
     margin-top: 5px;
-    padding-left: 15px;
+    padding: 15px;
     font-size: 20px;
 }
 
@@ -153,6 +166,7 @@ p::before {
 .answers-list {
     list-style: none;
     padding: 0;
+    margin: 10px 0 0;
 }
 
 button {
@@ -163,6 +177,12 @@ button {
 	font-size: 23px;
 	background: #d0d0d5;
 	border: 3px solid #3b3b4f;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f1be32;
+    color: #0a0a23;
 }
 
 footer {
@@ -176,11 +196,18 @@ footer a {
     color: #dfdfe2;
 }
 
+footer a:hover {
+    color: #f1be32;
+}
+
 address {
     text-align: center;
     padding: 0.3em;
 }
 
+address > span::after {
+    content: "Developed by PabloskyDev";
+}
 .sr-only {
     position: absolute;
     width: 1px;
